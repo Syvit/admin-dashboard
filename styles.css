@@ -5,6 +5,7 @@
     --main-bg-low-opacity:#0c0c139d;
 	--main-txt:#f3f3f3;
 	--highlight:#ff5d5d ;
+	--highlight-item:#ff4242 ;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -110,29 +111,30 @@ svg{
 }
 
 .nav-items>ul>li>a{
-    position: relative;
     font-size: 1.2em;
-    top: 2vh;
-    left: 2.3vw;
     transition: 0.2s;
+    position: relative;
+    top: -0.7vh;
 }
 
 .nav-items>ul>li>a>svg{
     margin-right: 1em;
     width: 1.5em;
-    top: 0.5vh;
+    top: 0.9vh;
 }
 
 .nav-items>ul>li{
+    position: relative;
     transition: 0.2s;
+    width: fit-content;
+    bottom: 0.5vh;
+    left: 2.3vw;
+    padding: 0.3em 1em;
 }
 
 .nav-items>ul>li:hover{
-    transform: translateY(-0.1em);
-}
-
-.nav-items>ul>li>a:hover{
-    box-shadow: 0 0.1em 0 var(--main-txt);
+    background-color: var(--highlight-item);
+    scale: 1.03;
 }
 
 header{
